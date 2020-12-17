@@ -13,9 +13,9 @@ class School
     @name = name
     @grade = grade
     if @roster.include?(grade) == false 
-      roster[grade] = []
+      @roster[grade] = []
     end
-    roster[grade] << name
+    @roster[grade] << name
   end
   
 end
